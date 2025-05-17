@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yummy website">
+    <meta name="keywords" content="meals,category,area,ingredients,contactus">
+    <meta name="author" content="Rania Kashkash">
+
+    <!-- ^ Fav icon -->
+    <link href="images/logo.png" rel="icon" type="image/png">
+
+    <!-- ^ Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- ^ Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- ^ own css file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Yummy Exam</title>
+
+</head>
+
+<body class="bg-black">
+    <aside class="d-flex asideContainer">
+        <div class="left-aside bg-black p-4 text-white d-flex flex-column align-items-start">
+            <div class="menu-links">
+                <ul class="list-unstyled text-left">
+                    <li class="py-2 w-auto"><a class="text-decoration-none text-white" href="#"
+                            id="searchLink">Search</a>
+                    </li>
+                    <li class="py-2 w-auto"><a class="text-decoration-none text-white" href="#"
+                            id="categoryLink">Categories</a>
+                    </li>
+                    <li class="py-2 w-auto"><a class="text-decoration-none text-white" href="#" id="areaLink">Area</a>
+                    </li>
+                    <li class="py-2 w-auto"><a class="text-decoration-none text-white" href="#"
+                            id="Ingredient">Ingredients</a></li>
+                    <li class="py-2 w-auto"><a class="text-decoration-none text-white" href="#" id="contactUs">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-footer w-auto">
+                <a href="#" class="text-white"><i class="fa-brands fa-facebook-f me-2"></i></a>
+                <a href="#" class="text-white"><i class="fa-brands fa-twitter me-2"></i></a>
+                <a href="#" class="text-white"><i class="fa-solid fa-globe me-2"></i></a>
+                <p class="mb-0 mt-2 small">&copy; 2019 All Rights Reserved.</p>
+            </div>
+
+        </div>
+        <div class="right-aside bg-white py-4 px-2 d-flex">
+            <div class="logo">
+                <img class="websiteLogo" src="./images/logo.png" alt="logo">
+            </div>
+            <div class="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="icons d-flex flex-column">
+                <a href="#" class="text-black"><i class="fa-solid fa-globe"></i></a>
+                <a href="#" class="text-black"><i class="fa-solid fa-share-nodes"></i></a>
+            </div>
+        </div>
+
+    </aside>
+
+    <!--^ Serach inputs -->
+    <div class="container searchContainer d-none mt-5 p-5 position-relative">
+        <div class="searchInputs d-flex justify-content-center">
+            <input class="form-control mx-1" type="search" id="searchByNameInput" placeholder="Search By Name"
+                aria-label="Search">
+            <input class="form-control mx-1" type="search" id="searchByLetterInput" placeholder="Search By First Letter"
+                maxlength="1" aria-label="Search">
+        </div>
+        <div class="resultContainer">
+
+        </div>
+    </div>
+
+    <!-- ^ Category -->
+    <div class="container categoriesContainer d-none">
+        <div class="row categoriesRow py-3">
+        </div>
+    </div>
+
+    <div class="container categoryMealsContainer d-none">
+        <div class="row categoryMealsRow my-md-3">
+        </div>
+    </div>
+
+    <!--^ Area -->
+    <div class="container areaContainer d-none">
+        <div class="row areaRow py-3">
+        </div>
+    </div>
+
+    <div class="container areaMealsContainer d-none">
+        <div class="row areaMealsRow my-md-3">
+        </div>
+    </div>
+
+    <!--^ Ingredient -->
+    <div class="container ingredientContainer d-none">
+        <div class="row ingredientRow py-3">
+        </div>
+    </div>
+
+    <div class="container ingredientMealsContainer d-none">
+        <div class="row ingredientMealsRow my-md-3">
+        </div>
+    </div>
+
+    <!--^ Contact us -->
+    <div class="container contactContainer min-vh-100 d-none flex-column justify-content-center ">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <input type="text" class="form-control " id="name" placeholder="Enter your name">
+                    <p class="validateMsg d-none bg-danger-subtle p-3 rounded-3 text-center fs-6 text-danger mt-2">
+                        Special characters and numbers not allowed</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <input type="email" class="form-control " id="email" placeholder="Enter your email">
+                    <p class="validateMsg d-none bg-danger-subtle p-3 rounded-3 text-center fs-6 text-danger mt-2">
+                        Email not valid *exemple@yyy.zzz</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <input type="number" class="form-control " id="phone" placeholder="Enter your phone">
+                    <p class="validateMsg d-none bg-danger-subtle p-3 rounded-3 text-center fs-6 text-danger mt-2">
+                        Enter valid Phone Number
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="age" placeholder="Enter your age">
+                    <p class="validateMsg d-none bg-danger-subtle p-3 rounded-3 text-center fs-6 text-danger mt-2">
+                        Enter valid age</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    <p class="validateMsg d-none bg-danger-subtle p-3 rounded-3 text-center fs-6 text-danger mt-2">
+                        Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="rewritePassInput" placeholder="Rewrite password">
+                    <p class="validateMsg d-none bg-danger-subtle p-3 rounded-3 text-center fs-6 text-danger mt-2">
+                        Enter valid repassword</p>
+                </div>
+            </div>
+
+        </div>
+        <button type="submit" class="btn btn-danger mx-auto">Submit</button>
+        <p></p>
+    </div>
+
+
+    <!--^ Displays Meals -->
+    <div class="container mealsContainer d-block">
+        <div class="row mealsRow py-3">
+        </div>
+    </div>
+
+    <div class="container mealDetailsContainer d-none">
+        <div class="row mealDetailsRow my-md-3">
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
